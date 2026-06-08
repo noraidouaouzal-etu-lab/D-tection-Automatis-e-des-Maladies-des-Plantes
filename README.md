@@ -1,45 +1,162 @@
-# 🌿 Plant Disease Detection using Deep Learning
+# 🌿 Détection Automatisée des Maladies des Plantes par Deep Learning
 
-## 📌 Project Description
-This project is a Deep Learning-based system for automatic detection of plant diseases from leaf images using a Convolutional Neural Network (EfficientNetB0).
+## 📌 Description du Projet
 
-The model classifies plant leaf images into 38 different disease classes using the PlantVillage dataset.
+Ce projet vise à détecter automatiquement les maladies des plantes à partir d’images de feuilles en utilisant les techniques de Deep Learning et de Vision par Ordinateur.
 
----
-
-## 🚀 Objectives
-- Automate plant disease detection using AI
-- Help farmers detect diseases early
-- Achieve high accuracy using transfer learning
+Le modèle développé analyse les caractéristiques visuelles des feuilles afin d’identifier différentes maladies végétales avec une grande précision. Cette solution peut contribuer à la surveillance des cultures et à la détection précoce des maladies afin de limiter les pertes agricoles.
 
 ---
 
-## 🧠 Model Architecture
-- Base Model: EfficientNetB0 (pretrained on ImageNet)
-- Transfer Learning applied
-- Fine-tuning of last layers
-- Dense layers + Softmax (38 classes)
+## 🎯 Objectifs
+
+* Détecter automatiquement les maladies des plantes.
+* Classifier les images selon leur catégorie.
+* Évaluer les performances d’un modèle de Deep Learning.
+* Fournir un outil d’aide au diagnostic agricole.
 
 ---
 
-## 📊 Dataset
-- PlantVillage dataset
-- 38 classes of plant diseases
-- ~87,000 images
-- Preprocessing:
-  - Resize images (224x224)
-  - Normalization
-  - Data augmentation
+## 🛠️ Technologies Utilisées
 
-⚠️ Dataset not included in this repository due to size constraints.
-
----
-
-## 📈 Results
-- Accuracy: ~96.5%
-- F1-score: ~0.95+
-- AUC-ROC: 1.00
+* Python
+* TensorFlow / Keras
+* NumPy
+* Pandas
+* Matplotlib
+* Scikit-Learn
+* Jupyter Notebook
 
 ---
 
-## 📁 Project Structure
+## 📂 Structure du Projet
+
+```text
+├── plant_disease_model.keras
+├── plant_disease_model.tflite
+├── entrainement_modele.ipynb
+├── app.py
+├── requirements.txt
+├── README.md
+│
+├── presentation_projet.pptx
+│
+├── matrice_confusion_finale.png
+├── courbe_accuracy_poster_style.png
+├── courbe_loss_poster_style.png
+├── courbe_ROC_professionnelle.png
+├── historique_entrainement_poster.png
+├── rapport_performances_visuel.png
+├── dashboard_metriques_globales.png
+├── poster_accuracy_seule.png
+├── poster_loss_seule.png
+├── treemap_cultures_maladies.png
+├── treemap_performance_ia.png
+```
+
+---
+
+## 🧠 Modèle de Deep Learning
+
+Le modèle principal est enregistré dans :
+
+```text
+plant_disease_model.keras
+```
+
+Une version optimisée pour le déploiement mobile est également disponible :
+
+```text
+plant_disease_model.tflite
+```
+
+Le modèle atteint une précision d’environ **96 %**, démontrant sa capacité à identifier correctement les maladies des plantes.
+
+---
+
+## 📊 Évaluation des Performances
+
+Les performances du modèle ont été analysées à l’aide des métriques suivantes :
+
+* Accuracy
+* Precision
+* Recall
+* F1-Score
+* Courbe ROC
+* Matrice de confusion
+
+Les résultats sont illustrés à travers plusieurs visualisations :
+
+* Matrice de confusion
+* Courbes Accuracy et Loss
+* Courbe ROC
+* Historique d’entraînement
+* Dashboard global des métriques
+* Treemap des cultures et maladies
+* Treemap des performances du modèle
+
+---
+
+## 🚀 Exécution du Projet
+
+### 1. Cloner le dépôt
+
+```bash
+git clone https://github.com/noraidouaouzal-etu-lab/D-tection-Automatis-e-des-Maladies-des-Plantes.git
+```
+
+### 2. Accéder au projet
+
+```bash
+cd D-tection-Automatis-e-des-Maladies-des-Plantes
+```
+
+### 3. Installer les dépendances
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Lancer l’application
+
+```bash
+python app.py
+```
+
+---
+
+## 📓 Notebook d'Entraînement
+
+Le notebook principal utilisé pour l’entraînement et les expérimentations est :
+
+```text
+entrainement_modele.ipynb
+```
+
+---
+
+## 📄 Présentation du Projet
+
+La présentation PowerPoint du projet est disponible dans :
+
+```text
+presentation_projet.pptx
+```
+
+---
+
+## 👩‍🎓 Réalisé par
+
+**Nora Idouaouzal**
+
+Master Data Science & Big Data
+
+Faculté des Sciences Ben M'Sik – Casablanca
+
+Année Universitaire 2025-2026
+
+---
+
+## 📜 Licence
+
+Ce projet a été réalisé dans un cadre académique et pédagogique.
