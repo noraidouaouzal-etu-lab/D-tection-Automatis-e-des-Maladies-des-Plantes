@@ -148,8 +148,9 @@ presentation_projet.pptx
 ## 👩‍🎓 Réalisé par
 
 **Nora Idouaouzal**
+**Malak Bousseta**
 
-Master Data Science & Big Data
+Master Data Science & Big Data & AI
 
 Faculté des Sciences Ben M'Sik – Casablanca
 
